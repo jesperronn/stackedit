@@ -5,12 +5,12 @@ StackEdit is a full-featured, open-source Markdown editor based on PageDown, the
 
 Main showcase: https://stackedit.io/.
 
-This branch (editor only)
-==========================
+This fork (Stackedit-editor only)
+===================================
 
 Minimal client-side part of Stackedit.
 
-This branch [jesperronn/split_panel_editor](https://github.com/jesperronn/stackedit/tree/split_panel_editor) removes all server-side parts, and special code for handling www.stackedit.io, google analytics, and more.
+This branch [jesperronn/master](https://github.com/jesperronn/stackedit/tree/master) removes all server-side parts, and special code for handling www.stackedit.io, google analytics, and more.
 
 The goal is that this should provide a clean split-panel editor without extra bells and whistles.
 
@@ -42,6 +42,17 @@ It is meant to be integrated in your own page, as an editor plugin for that part
 
 
 All of this functionality is provided in the full version of Stackedit. This branch can easily be extended to provide just the features you need for a specific project.
+
+Furthermore, this fork splits up functionality to make the editor easier to integrate into
+existing pages. This fork of Stackedit is meant to be easier to use, easier to extend,
+and easier to slim down in case you need it. The following improvements are put in, but
+also live as pull-requests for benweet/stackedit project:
+
+* [x] [Integration-firendly Stackedit: Move some 'evil' styles out into separate files](/benweet/stackedit/#705)
+* [x] [Relax keyboard triggers: We want reload, not HR](/benweet/stackedit/#704)
+* [x] [Extracted theme loading to separate file.](/benweet/stackedit/#652)
+* [x] [Possible to override internal Stackedit functionality](/benweet/stackedit/#695)
+* [x] [Stackedit modularization: Plugins folders](/benweet/stackedit/#595)
 
 If you want the full version of stackedit, with all the functionality listed above, please go to https://stackedit.io
 
