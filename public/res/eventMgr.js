@@ -12,7 +12,6 @@ define([
 	"extensions/partialRendering",
 	"extensions/buttonMarkdownSyntax",
 	"extensions/dialogAbout",
-	"extensions/dialogOpenHarddrive",
 	"extensions/documentTitle",
 	"extensions/documentSelector",
 	"extensions/documentPanel",
