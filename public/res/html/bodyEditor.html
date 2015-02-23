@@ -96,9 +96,6 @@
 						<li><div>"<span class="file-title"></span>" is already synchronized.</div></li>
 						<li><a href="#" class="action-force-synchronization"><i class="icon-refresh"></i>
 							Force synchronization</a></li>
-	                    <li><a href="#" data-toggle="modal" data-target=".modal-manage-sync"
-	                        class="action-reset-input"><i
-	                        class="icon-refresh"></i> Manage synchronization</a></li>
 	                </ul>
 				</div>
 				<a href="#" data-toggle="collapse" data-target=".collapse-publish-on"
@@ -111,25 +108,13 @@
 	                    <li><div>"<span class="file-title"></span>" is already published.</div></li>
 	                    <li><a href="#" class="action-update-publication"><i class="icon-upload"></i>
 	                        Update publication</a></li>
-	                    <li><a href="#" data-toggle="modal" data-target=".modal-manage-publish"
-	                        class="action-reset-input"><i class="icon-upload"></i>
-	                        Manage publication</a></li>
 					</ul>
 					<ul class="nav publish-on-provider-list">
 					</ul>
 				</div>
-				<a href="#" data-toggle="modal" data-target=".modal-manage-sharing"
-					class="action-reset-input list-group-item">
-					<div><i class="icon-link"></i>Sharing</div>
-					<small>Share document links</small>
-				</a>
 			</div>
 			<div class="list-group">
 
-				<a data-toggle="modal"
-					data-target=".modal-import-harddrive-markdown"
-					class="list-group-item action-reset-input" href="#"><i
-					class="icon-hdd"></i> Import from disk</a>
 				<a href="#" data-toggle="collapse" data-target=".collapse-save-as"
 					class="list-group-item"><i class="icon-hdd"></i> Export to disk</a>
 				<div class="sub-menu collapse collapse-save-as clearfix">
@@ -146,10 +131,6 @@
 	            <a data-toggle="modal" data-target=".modal-import-url"
 	                class="list-group-item action-reset-input" href="#"><i
 					class="icon-globe"></i> Import from URL</a>
-	            <a data-toggle="modal"
-					data-target=".modal-import-harddrive-html"
-					class="list-group-item action-reset-input" href="#"><i
-					class="icon-code"></i> Convert HTML to Markdown</a>
 			</div>
 			<ul class="nav">
 				<li><a href="#" data-toggle="modal" data-target=".modal-about"><i
@@ -326,92 +307,6 @@
 </div>
 
 
-<div class="modal fade modal-import-harddrive-markdown">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-					aria-hidden="true">&times;</button>
-				<h2 class="modal-title">Import from disk</h2>
-			</div>
-			<div class="modal-body">
-				<p>Please select your Markdown files here:</p>
-				<p>
-					<input type="file" id="input-file-import-harddrive-markdown"
-						multiple class="form-control" />
-				</p>
-				<p>Or drag and drop your Markdown files here:</p>
-				<p id="dropzone-import-harddrive-markdown" class="drop-zone">Drop
-					files here</p>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="modal fade modal-import-harddrive-html">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-					aria-hidden="true">&times;</button>
-				<h2 class="modal-title">Convert HTML to Markdown</h2>
-			</div>
-			<div class="modal-body">
-				<p>Please select your HTML files here:</p>
-				<p>
-					<input type="file" id="input-file-import-harddrive-html" multiple
-						class="form-control" />
-				</p>
-				<p>Or drag and drop your HTML files here:</p>
-				<p id="dropzone-import-harddrive-html" class="drop-zone">Drop
-					files here</p>
-				<p>Or insert your HTML code here:</p>
-				<textarea id="input-convert-html" class="form-control"></textarea>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn btn-default" data-dismiss="modal">Close</a> <a
-					href="#" class="btn btn-primary action-convert-html"
-					data-dismiss="modal">OK</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="modal fade modal-manage-sync">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-					aria-hidden="true">&times;</button>
-				<h2 class="modal-title">Synchronization</h2>
-			</div>
-			<div class="modal-body">
-				<p>
-					"<span class="file-title"></span>" is synchronized with the
-					following location(s):
-				</p>
-				<div class="sync-list"></div>
-				<blockquote>
-					<p><b>Note:</b> Removing a synchronized location will not delete any
-					file.</p>
-				</blockquote>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-
 <div class="modal fade modal-publish">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -481,62 +376,6 @@
 		</div>
 	</div>
 </div>
-
-
-<div class="modal fade modal-manage-publish">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-					aria-hidden="true">&times;</button>
-				<h2 class="modal-title">Publication</h2>
-			</div>
-			<div class="modal-body">
-				<p>
-					"<span class="file-title"></span>" is published on the following
-					location(s):
-				</p>
-				<div class="publish-list"></div>
-				<blockquote>
-					<p><b>Note:</b> Removing a publish location will not delete the actual publication.</p>
-				</blockquote>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="modal fade modal-manage-sharing">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"
-					aria-hidden="true">&times;</button>
-				<h2 class="modal-title">Sharing</h2>
-			</div>
-			<div class="modal-body">
-                <p>Collaborate on "<span class="file-title"></span>" using the following link(s):</p>
-            	<p class="msg-no-share-editor"><b>No sharing link yet!</b>
-            	</p>
-                <div class="share-editor-list"></div>
-                <hr>
-                <p>Share a read-only version of "<span class="file-title"></span>" using the following link(s):</p>
-            	<p class="msg-no-share-viewer"><b>No sharing link yet!</b>
-            	</p>
-                <div class="share-viewer-list"></div>
-			</div>
-			<div class="modal-footer">
-				<a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
-			</div>
-		</div>
-	</div>
-</div>
-
 
 
 <div class="modal fade modal-non-unique">
