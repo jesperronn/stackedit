@@ -191,7 +191,7 @@ define([
 	core.onReady = function() {
 		// Add RTL class
 		document.body.className += ' ' + settings.editMode;
-		var tmp = document.createElement('body');
+
 		if(window.viewerMode === true) {
 			tmp.innerHTML = bodyViewerHTML;
 		}
