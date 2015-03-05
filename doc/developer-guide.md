@@ -523,12 +523,6 @@ myExtension.onMessage = function(message) {
 
     > Triggered by the `eventMgr` module. Only `Extension` modules can handle this event.
 
-- **`onCreateEditorButton()`**
-
-    Allows extensions to add their own buttons in the side bar. Implemented listeners have to return an HTML button element. See `onCreateButton` for a concrete example.
-
-    > Triggered by the `eventMgr` module. Only `Extension` modules can handle this event.
-
 - **`onCreatePreviewButton()`**
 
     Allows extensions to add their own buttons over the preview. Implemented listeners have to return an HTML button element. See `onCreateButton` for a concrete example.
